@@ -7,9 +7,54 @@
     <script>
         //1 es piedra, 2 es papel, 3 es tijera
         let jugador = 0
-        let pc = 2
+        let pc = Math.floor(Math.random() * 3) + 1
         jugador = prompt("Elige: 1 para piedra; 2 para papel; 3 para tijera")
-        alert("Elegiste " + jugador)
+        //alert("Elegiste " + jugador)
+
+        //Elección del jugador
+        if (jugador == 1){
+            alert("Elegiste 🪨")
+        }
+        else if (jugador == 2){
+            alert("Elegiste 🧻")
+        }
+        else if (jugador == 3){
+            alert("Elegiste ✂️")
+        }
+        else{
+            alert("Opción incorrecta, recarga la página y vuelve a intentar")
+        }
+
+        //Elección del computador
+        if (pc == 1){
+            alert("PC eligió 🪨")
+        }
+        else if (pc == 2){
+            alert("PC eligió 🧻")
+        }
+        else if (pc == 3){
+            alert("PC eligió ✂️")
+        }
+        else{
+            alert("Opción incorrecta, recarga la página y vuelve a intentar")
+        }
+
+        //Combate
+        if(pc==jugador){
+            alert("Empate")
+        }
+        else if(jugador == 1 && pc = 3){
+            alert("Ganaste")
+        }
+        else if(jugar == 2 && pc = 1){
+            alert("Ganaste")
+        }
+        else if(jugador == 3 && pc = 2){
+            alert("Ganaste")
+        }
+        else{
+            alert("Perdiste")
+        }
     </script>
 </head>
 <body>
