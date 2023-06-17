@@ -6,6 +6,53 @@
     <title>¡MOKEPON!</title>
 </head>
 <body>
-    <h1>¡MOKEPON! 🔥💦🌿</h1>
+    <h1>¡MOKEPON! 🔥💦🌿</h1><!--Se sugiere que la etiqueta h1 sólo se use una vez en nuestro html-->
+
+    <section id="seleccionar-mascota">
+        <h2>¡Elige tu mascota!</h2>
+
+        <!--El atributo name indica a qué grupo pertenecen los input tipo radio, y si todos pertenecen al mismo entonces
+        solo se permite la elección de uno al tiempo-->
+        <label for="Hipodoge">Hipodoge</label>
+        <input type="radio" name="mascota" id="Hipodoge"/>
+
+        <label for="Capipepo">Capipepo</label><!--El for es para que al darle clic al label, también se selecciona el círculo-->
+        <input type="radio" name="mascota" id="Capipepo"/>
+
+        <label for="Ratigueya">Ratigueya</label>
+        <input type="radio" name="mascota" id="Ratigueya"/>
+
+        <label for="Langostelvis">Langostelvis</label>
+        <input type="radio" name="mascota" id="Langostelvis"/>
+
+        <label for="Tucapalma">Tucapalma</label>
+        <input type="radio" name="mascota" id="Tucapalma"/>
+
+        <label for="Pydos">Pydos</label>
+        <input type="radio" name="mascota" id="Pydos"/>
+
+        <button>Seleccionar</button>
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h2>¡Elige tu ataque!</h2>
+
+        <p>Tu mascota tiene <span>3</span> vidas</p><!-- span es para manipular ese dato con javascript-->
+        <p>La mascota del enemigo tiene <span>3</span> vidas</p>
+
+        <p>
+            <button>Fuego 🔥</button>
+            <button>Agua 💦</button>
+            <button>Tierra 🌿</button>
+        </p>
+    </section>
+
+    <section id="mensajes">
+        <p>Tu mascota atacó con <span>FUEGO</span>, la mascota del enemigo atacó con <span>TIERRA</span> - <span>GANASTE 🎉</span></p>
+    </section>
+
+    <section id="reiniciar">
+
+    </section>
 </body>
 </html>
