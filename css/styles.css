@@ -1,3 +1,4 @@
+/* General styles for the page */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -7,37 +8,49 @@ body {
     color: #333;
 }
 
+/* Header section with background image and styling */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    background: url('../images/fondo.png') center/cover no-repeat, #333; /* Imagen y color de fondo de respaldo */
+    color: #fff; /* Texto blanco para contraste */
+    padding: 40px 20px; /* Espaciado interior */
+    text-align: center; /* Centrar el texto */
 }
 
+/* Header title styling */
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em; /* Tamaño destacado para el título */
 }
 
+/* Header paragraph styling */
+header p {
+    font-size: 1.5em; /* Tamaño adecuado para la descripción */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Main content styling */
 main {
-    padding: 20px;
+    padding: 20px; /* Espaciado interior para la sección principal */
 }
 
+/* General styling for sections */
 section {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espaciado inferior entre secciones */
 }
 
+/* Styling for project cards */
 .project-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    background: #fff; /* Fondo blanco para destacar la tarjeta */
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 10px; /* Espaciado interno de la tarjeta */
+    margin-bottom: 10px; /* Espaciado inferior entre tarjetas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
 }
 
+/* Footer styling */
 footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: #fff;
+    text-align: center; /* Centrar el texto en el pie de página */
+    padding: 10px; /* Espaciado interno */
+    background: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
 }
