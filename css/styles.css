@@ -8,59 +8,76 @@ body {
     color: #333;
 }
 
+/* Header and footer common styling */
+header, footer {
+    background: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Centrar el texto */
+}
+
 /* Header section with background image and styling */
 header {
-    background: url('../images/fondo.png') center/cover no-repeat, #333; /* Imagen y color de fondo de respaldo */
-    color: #fff; /* Texto blanco para contraste */
-    padding: 40px 20px; /* Espaciado interior */
-    text-align: center; /* Centrar el texto */
+    position: relative;
+    background: url('../images/fondo.png') center/cover no-repeat, #333; /* Imagen y color de fondo */
+    padding: 40px 20px; 
 }
 
 /* Header title styling */
 header h1 {
     margin: 0;
-    font-size: 3em; /* Tamaño destacado para el título */
+    font-size: 3em;
 }
 
 /* Header paragraph styling */
 header p {
-    font-size: 1.5em; /* Tamaño adecuado para la descripción */
-    margin-top: 10px; /* Espaciado superior */
+    font-size: 1.5em;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté sobre la superposición */
+}
+
+/* Superposición para oscurecer el fondo */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 /* Main content styling */
 main {
-    padding: 20px; /* Espaciado interior para la sección principal */
+    padding: 20px;
 }
 
 /* General styling for sections */
 section {
-    margin-bottom: 20px; /* Espaciado inferior entre secciones */
+    margin-bottom: 20px;
 }
 
 /* Styling for project cards */
 .project-card {
-    background: #fff; /* Fondo blanco para destacar la tarjeta */
-    border: 1px solid #ddd; /* Borde gris claro */
-    padding: 10px; /* Espaciado interno de la tarjeta */
-    margin-bottom: 10px; /* Espaciado inferior entre tarjetas */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer styling */
 footer {
-    text-align: center; /* Centrar el texto en el pie de página */
-    padding: 10px; /* Espaciado interno */
-    background: #333; /* Fondo oscuro */
-    color: #fff; /* Texto blanco */
+    padding: 10px;
 }
 
 footer a {
     color: #4db8ff; /* Un azul claro para contrastar con el fondo oscuro */
-    text-decoration: underline; /* Mantén el subrayado para indicar claramente que es un enlace */
+    text-decoration: underline; 
 }
 
 footer a:hover {
-    color: #fff; /* Cuando el ratón pase por encima, el enlace se verá blanco */
-    text-decoration: none; /* Quita el subrayado para darle un efecto visual */
+    color: #fff;
+    text-decoration: none;
 }
