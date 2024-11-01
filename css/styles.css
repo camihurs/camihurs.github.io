@@ -34,6 +34,7 @@ header p {
     margin-top: 10px;
     position: relative;
     z-index: 2; /* Asegura que el texto esté sobre la superposición */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Añade una sombra oscura al texto */
 }
 
 /* Superposición para oscurecer el fondo */
