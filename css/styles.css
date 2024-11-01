@@ -54,3 +54,13 @@ footer {
     background: #333; /* Fondo oscuro */
     color: #fff; /* Texto blanco */
 }
+
+footer a {
+    color: #4db8ff; /* Un azul claro para contrastar con el fondo oscuro */
+    text-decoration: underline; /* Mantén el subrayado para indicar claramente que es un enlace */
+}
+
+footer a:hover {
+    color: #fff; /* Cuando el ratón pase por encima, el enlace se verá blanco */
+    text-decoration: none; /* Quita el subrayado para darle un efecto visual */
+}
