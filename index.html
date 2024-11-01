@@ -1,15 +1,43 @@
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Mi primera paginita</title>
-        <script>
-            let nombre = ""
-            nombre = prompt("¿Cuál es tu nombre")
-            alert("Bienvenido " + nombre)
-        </script>
-    </head>
-    <body>
-        <h1>Mi primer website</h1>
-        <p>Este es nuestro primer programa completo y profesional</p>
-    </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camilo Hur</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Camilo Hur</h1>
+        <p>Investigador en acústica submarina, apasionado por la ciencia y el aprendizaje constante.</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Sobre Mí</h2>
+            <p>Soy un investigador enfocado en el estudio de la acústica submarina, trabajando principalmente en la clasificación de minas utilizando señales de sonar de baja frecuencia...</p>
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="project-card">
+                <h3>Clasificación de Minas Submarinas</h3>
+                <p>Un proyecto orientado a utilizar modelos de "acoustic scattering" para diferenciar objetos en el fondo del mar.</p>
+            </div>
+            <!-- Añadir más tarjetas de proyecto aquí -->
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Si deseas contactarme, puedes enviarme un correo a <a href="mailto:tuemail@example.com">tuemail@example.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Camilo Hur - Todos los derechos reservados.</p>
+    </footer>
+</body>
 </html>
