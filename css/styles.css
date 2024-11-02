@@ -27,8 +27,8 @@ header h1 {
     margin: 0;
     font-size: 2em; /* Ajusta el tamaño de fuente para hacerlo similar a la segunda línea */
     font-weight: 400; /* Haz que el peso sea más ligero */
-    color: rgba(255, 255, 255, 0.85); /* Color blanco con un poco de transparencia */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra más sutil */
+    color: rgba(255, 255, 255, 1); /* Color blanco con un poco de transparencia */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra más sutil */
     letter-spacing: 1px; /* Añade un ligero espacio entre letras para darle elegancia */
 }
 
