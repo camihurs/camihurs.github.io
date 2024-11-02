@@ -67,13 +67,22 @@ section {
 }
 
 /* Styling for project cards */
+/* Hover effect for project cards */
 .project-card {
     background: #fff;
     border: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.project-card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Hace la sombra más profunda */
+    border-color: #4db8ff; /* Cambia el color del borde al azul del footer */
+}
+
 
 /* Footer styling */
 footer {
