@@ -78,6 +78,7 @@ section {
 }
 
 .project-card:hover {
+    background-color: #f0f8ff; /* Cambio de color de fondo al pasar el cursor */
     transform: scale(1.05); /* Aumenta ligeramente el tamaño */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Hace la sombra más profunda */
     border-color: #4db8ff; /* Cambia el color del borde al azul del footer */
