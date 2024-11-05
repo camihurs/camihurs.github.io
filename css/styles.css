@@ -99,3 +99,100 @@ footer a:hover {
     color: #fff;
     text-decoration: none;
 }
+
+/* Estilos para la página de experiencia académica */
+
+/* Sección de encabezado */
+header {
+    background-color: #4db8ff; /* Color de fondo azul claro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Secciones principales */
+main {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #333;
+    border-bottom: 2px solid #4db8ff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+section p, section ul {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Enlaces */
+a {
+    color: #4db8ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de contacto */
+#contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact-info ul li {
+    margin-bottom: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #4db8ff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
