@@ -66,24 +66,62 @@ section {
     margin-bottom: 20px;
 }
 
+
+.projects {
+    display: flex; /* Activa el modelo flexbox */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en filas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espacio uniforme entre tarjetas */
+}
+
+
+
+.projects-title {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 1.8em; /* Ajusta el tamaño de la fuente */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: bold; /* Resalta el texto */
+    color: #333; /* Color consistente con el diseño */
+}
+
 /* Styling for project cards */
 /* Hover effect for project cards */
 .project-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background: #e6f7ff; /* Fondo azul claro */
+    border: 1px solid #b3e0ff; /* Borde azul claro */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px; /* Establece un ancho fijo */
+    display: flex;
+    flex-direction: column; /* Alinea elementos internos verticalmente */
+    justify-content: space-between; /* Distribuye espacio uniformemente */
 }
 
 .project-card:hover {
-    background-color: #f0f8ff; /* Cambio de color de fondo al pasar el cursor */
-    transform: scale(1.02); /* Aumenta ligeramente el tamaño */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Hace la sombra más profunda */
-    border-color: #4db8ff; /* Cambia el color del borde al azul del footer */
+    background-color: #ccf2ff; /* Fondo más claro al pasar el cursor */
+    transform: translateY(-5px); /* Eleva ligeramente la tarjeta */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+    border-color: #66d9ff; /* Borde más intenso */
 }
 
+.project-card h3 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #005580; /* Texto azul oscuro */
+}
+
+.project-card h3 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card h3 a:hover {
+    text-decoration: underline;
+}
 
 /* Footer styling */
 footer {
@@ -92,7 +130,7 @@ footer {
 
 footer a {
     color: #4db8ff; /* Un azul claro para contrastar con el fondo oscuro */
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 footer a:hover {
